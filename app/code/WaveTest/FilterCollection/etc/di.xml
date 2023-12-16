@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Project: Wave Test
+ * Author: Eshcole Peets
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\OpenSearch\Model\SearchClient">
+        <plugin name="wave_test_filter_opensearch_collection"
+                type="WaveTest\FilterCollection\Model\Plugin\FilterOutProducts"/>
+    </type>
+</config>
