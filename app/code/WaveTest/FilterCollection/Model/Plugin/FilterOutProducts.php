@@ -75,7 +75,7 @@ class FilterOutProducts
 
         $collection = $this->productRepository->getList($productSearchCriteria)->getItems();
 
-        if (count($collection) >= 0) {
+        if (count($collection) > 0) {
             $ids = [];
             foreach ($collection as $product) {
                 $ids[] = $product->getId();
